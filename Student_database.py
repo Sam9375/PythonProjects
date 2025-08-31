@@ -45,8 +45,8 @@ if menu == 'input scores':
             grade = 'F'
         st.write(name,'your total score is',totalscore,'and your grade is',grade)
 
-        studentdict = {'Math':[mathscore], 'English':[englishscore], 'Science':[sciencescore],
-                        'French':[frenchscore], 'Total':[totalscore],'Average':[average], 'Grade':[grade],}
+        studentdict = {'Name':[name], 'Math':[mathscore], 'English':[englishscore], 'Science':[sciencescore],
+                        'French':[frenchscore], 'Total':[totalscore],'Average':[average], 'Grade':[grade]}
 
         #st.table(studentdict)
         #st.write(studentdict)

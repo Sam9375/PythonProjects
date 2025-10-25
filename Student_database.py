@@ -51,7 +51,6 @@ if menu == 'input scores':
         #st.table(studentdict)
         #st.write(studentdict)
         student_table = pd.DataFrame(studentdict) #convert this dict to a table
-        jointables = pd.concat([scoresfile,student_table],ignore_index=True) #join the old table with the new table
-        jointables.to_csv('student_scores.csv',index=False)
+        student_table.to_csv('student_scores.csv',mode='a',header=scoresfile.empty,index=False) #a = append (add to the end of a list/dict)
         #st.table(studentdict)
         st.success('saved')

@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st #open a page for your python app
 import pandas as pd #this helps to work on CSV files and tables
 
 #Try and except is used to make decisions when there is an error in the code
